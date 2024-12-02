@@ -18,14 +18,22 @@ try{
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     if ($results){
+      echo "<table border='1'>";
+      echo "<tr>
+              <th>Country Name</th>
+              <th>Continent</th>
+              <th>Independence</th>
+              <th>Head of State</th>
+            </tr>";
       foreach ($results as $country){
-        echo "<h2>{$country['name']}</h2>";
-        echo "<p><strong>Capital:</strong> {$country['capital']}</p>";
-        echo "<p><strong>Region:</strong> {$country['region']}</p>";
-        echo "<p><strong>Population:</strong> {$country['population']}</p>";
-        echo "<p><strong>Head of State:</strong> {$country['head_of_state']}</p>";
-        echo "<hr>";
+        echo "<tr>";
+        echo "<td>{$country['name']}</td>";
+        echo "<td>{$country['continent']}</td>";
+        echo "<td>{$country['independence_year']}</td>";
+        echo "<td>{$country['head_of_state']}</td>";
+        echo "</tr>";
       }
+      echo "</table>";
     }else{
       echo "<p>No Such Result Found for: '{$name_of_country}'</p>";
     }
@@ -34,14 +42,22 @@ try{
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     if($results){
+      echo "<table border='1'>";
+      echo "<tr>
+              <th>Country Name</th>
+              <th>Continent</th>
+              <th>Independence</th>
+              <th>Head of State</th>
+            </tr>";
       foreach ($results as $country){
-        echo "<h2>{$country['name']}</h2>";
-        echo "<p><strong>Capital:</strong> {$country['capital']}</p>";
-        echo "<p><strong>Region:</strong> {$country['region']}</p>";
-        echo "<p><strong>Population:</strong> {$country['population']}</p>";
-        echo "<p><strong>Head of State:</strong> {$country['head_of_state']}</p>";
-        echo "<hr>";
+        echo "<tr>";
+        echo "<td>{$country['name']}</td>";
+        echo "<td>{$country['continent']}</td>";
+        echo "<td>{$country['independence_year']}</td>";
+        echo "<td>{$country['head_of_state']}</td>";
+        echo "</tr>";
     }
+    echo "</table>";
   }else{
     echo "<p>No Countries Found.</p>";
   }
