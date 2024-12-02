@@ -1,29 +1,48 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
-    background-color: khaki;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightpink;
 }
 
 h1{
     color: black;
-    background-color: burlywood;
+    background-color: white;
     text-align: center;
     font-size: 70px;
 }
 
 #country{
     border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 630px;
+    height: 40px;
 }
 
 #lookup{
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 20px;
     border-color: black;
     width: 60px;
-    height: 25px;
+    height: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: #ffffff;
+}
+
+#lookup:hover{
+    background-color: palevioletred;
+}
+
+#cities{
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: black;
+    width: 60px;
+    height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffffff;
+}
+
+#cities:hover{
+    background-color: palevioletred;
 }
