@@ -1,1 +1,29 @@
-/* Add your own styles */
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: khaki;
+}
+
+h1{
+    color: black;
+    background-color: burlywood;
+    text-align: center;
+    font-size: 70px;
+}
+
+#country{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 630px;
+}
+
+#lookup{
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: black;
+    width: 60px;
+    height: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #ffffff;
+}
